@@ -52,7 +52,7 @@ const startServer = async () => {
     }
   } catch (error) {
     console.error('Failed to start server:', error);
-    process.exit(1);
+    // ห้ามใช้ process.exit(1) บน Vercel เพราะจะทำให้ Serverless Function แครชทันที
   }
 };
 
